@@ -21,25 +21,25 @@
 
         <div class="container">
             <h2>Latest Mars News</h2>
-            <h4>{{ mars_data.news_title }}</h4>
-            <p>{{ mars_data.news_p }}</p>
+            <h4>{{ mars.news_title }}</h4>
+            <p>{{ mars.news_p }}</p>
 
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <h2>Featured Mars Image</h2>
-                    <img src="{{ mars_data.featured_image_url }}" alt="feat_img">
+                    <img src="{{ mars.featured_image_url }}" alt="feat_img">
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3>Mars Facts</h3>
-                    <p>{{ mars_data.mars_fact }}</p>
+                    <p>{{ mars.mars_fact }}</p>
                 </div>
             </div>
 
             <div class="row">
                 <h2>Mars Hemispheres</h2>
                 <hr>
-                {% for hemis in mars_data.hemisphere_image_urls %}
+                {% for hemis in mars.hemisphere_image_urls %}
                     <div class="col-lg-3 col-md-3 col-sm-12">
                         <img src="{{ hemis.img_url }}" alt="hemis.title">
                         <br>
