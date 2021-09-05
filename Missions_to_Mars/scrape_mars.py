@@ -59,7 +59,7 @@ def scrape_mars():
     mars_df = comparison_df.rename(columns={0:"Description", 1:"Mars", 2:"Earth"}).set_index("Description")
     
     # Convert dataframe to html
-    mars_fact = mars_df.to_html('mars_fact.html', classes=["table", "table-striped"], justify="left")
+    mars_fact = mars_df.to_html()
 
     # Scrapping Mars Hemispheres images
     # Access webpage for data scrapping
