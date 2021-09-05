@@ -1,0 +1,16 @@
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.jumbotron {
+    background-color: rgb(230, 230, 230);    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #9C2E35;
+    border-color: #9C2E35;
+}
+
