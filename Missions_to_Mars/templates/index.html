@@ -22,7 +22,7 @@
         <div class="container">
             <h2>Latest Mars News</h2>
             <h4>{{ mars.news_title }}</h4>
-            <p>{{ mars.news_p }}</p>
+            <p>{{ mars.news_paragraph }}</p>
 
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12">
@@ -32,21 +32,24 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3>Mars Facts</h3>
-                    <p>{{ mars.mars_fact }}</p>
+                    <h6>{{ mars.mars_facts | safe }}</h6>
                 </div>
             </div>
 
             <div class="row">
                 <h2>Mars Hemispheres</h2>
                 <hr>
-                {% for hemis in mars.hemisphere_image_urls %}
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <img src="{{ hemis.img_url }}" alt="hemis.title">
+                {% for hemis in mars.mars_hemispheres_urls %}
+                    <div id="hem" class="col-lg-3 col-md-3 col-sm-12">
+                        <img src="{{ hemis.img_url }}" alt="hemis.title" width=310 length=310>
                         <br>
-                        <h3>{{ hemis.title }}</h3>
+                        <br>
+                        <h5 align="center">{{ hemis.title }}</h5>
+                        <br>
                     </div>
                 {% endfor %}
                 <hr>
+                <br>
             </div>
         </div>
     </div>
