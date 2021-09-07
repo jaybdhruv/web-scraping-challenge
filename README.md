@@ -44,11 +44,11 @@ Used MongoDB with Flask template to create a new HTML page that displays all of 
 
 * MongoDB Data
 
-![mongodata](screenshots\mars_mongo_db.jpg)
+![mongodata](https://github.com/jaybdhruv/web-scraping-challenge/blob/main/screenshots/mars_mongo_db.jpg)
 
 * HTML Page
 
-![html_page1](screenshots\mission_to_mars_html1.jpg)
+![html_page1](https://github.com/jaybdhruv/web-scraping-challenge/blob/main/screenshots/mission_to_mars_html1.jpg)
 
-![html_page1](screenshots\mission_to_mars_html2.jpg)
+![html_page1](https://github.com/jaybdhruv/web-scraping-challenge/blob/main/screenshots/mission_to_mars_html2.jpg)
 
